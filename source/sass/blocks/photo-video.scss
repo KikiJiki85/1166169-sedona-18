@@ -1,23 +1,23 @@
-.social {
+.photo-video {
   font-family: 'PTSans', Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
 
-.social__title {
-  font-size: 21px;
+.photo-video__title {
+  font-size: 18px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.24;
-  letter-spacing: normal;
+  line-height: 1.44;
   text-align: center;
-  color: #000000;
-  display: block;
 }
 
-.social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.photo-video__text {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
 }

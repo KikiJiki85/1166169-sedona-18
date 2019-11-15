@@ -1,0 +1,29 @@
+.photo-list {
+  font-family: 'PTSans', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-list__title,
+.photo-list__likes {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.photo-list__caption {
+  text-transform: none;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+}
