@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/ptsansbold.woff2') format('woff2'),
+     url('../fonts/ptsansbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+src: url('../fonts/ptsans.woff2') format('woff2'),
+     url('../fonts/ptsans.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/sedona-welcome.scss";
+@import "blocks/sedona-advantages.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/popup-block";
+@import "blocks/find-hotel.scss";
+@import "blocks/button.scss";
+@import "blocks/sedona-map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
