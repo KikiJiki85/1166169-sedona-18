@@ -1,5 +1,5 @@
 .feedback-text {
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
   border: none;
@@ -18,13 +18,13 @@
   margin-bottom: 21px;
 }
 
-.feedback-text__textarea{
+.feedback-text__textarea {
   background-color: #f2f2f2;
   border: none;
   padding-top: 22px;
   padding-left: 22px;
   padding-bottom: 22px;
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: bold;
@@ -33,6 +33,7 @@
   line-height: 1.44;
   letter-spacing: normal;
   text-align: left;
+
   &::placeholder {
     color: #000000;
   }

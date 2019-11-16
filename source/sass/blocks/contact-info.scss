@@ -1,9 +1,10 @@
 .contact-info {
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
   border: none;
 }
+
 .contact-info__wrapper {
   list-style: none;
   margin: 0;
@@ -42,7 +43,7 @@
   padding-top: 22px;
   padding-left: 22px;
   padding-bottom: 22px;
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: bold;
@@ -51,6 +52,7 @@
   line-height: 1.44;
   letter-spacing: normal;
   text-align: left;
+
   &::placeholder {
     color: #000000;
   }
