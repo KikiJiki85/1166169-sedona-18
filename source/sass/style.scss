@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'PTSans';
   src: url('../fonts/ptsansbold.woff2') format('woff2'),
-     url('../fonts/ptsansbold.woff') format('woff');
+      url('../fonts/ptsansbold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'PTSans';
 src: url('../fonts/ptsans.woff2') format('woff2'),
-     url('../fonts/ptsans.woff') format('woff');
+      url('../fonts/ptsans.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
@@ -40,4 +40,3 @@ font-style: normal;
 @import "blocks/general-impression.scss";
 @import "blocks/visited-places.scss";
 @import "blocks/feedback-text.scss";
-
