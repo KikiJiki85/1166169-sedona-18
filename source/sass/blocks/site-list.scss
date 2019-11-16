@@ -1,8 +1,5 @@
-$bg-color: #81b3d2;
-$font-color: #ffffff;
-
 .site-list {
-  background-color: $bg-color;
+  background-color: #81b3d2;
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -19,7 +16,7 @@ $font-color: #ffffff;
 }
 
 .site-list__link {
-  color: $font-color;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   padding-top: 21px;
