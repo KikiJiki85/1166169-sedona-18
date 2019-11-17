@@ -1,6 +1,6 @@
 .find-hotel {
-  background-color: #ffffff;
-  font-family: "PTSans", "Arial", sans-serif;
+  background-color: $bg-main-color;
+  font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
   padding-top: 33px;
   padding-bottom: 49px;
@@ -11,7 +11,7 @@
   font-weight: bold;
   line-height: 1.24;
   text-align: center;
-  color: #000000;
+  color: $main-font-color;
   margin: 0;
 }
 
@@ -23,7 +23,7 @@
   line-height: 1.71;
   letter-spacing: normal;
   text-align: center;
-  color: #333333;
+  color: $text-font-color;
   margin: 0;
   margin-bottom: 40px;
 }
