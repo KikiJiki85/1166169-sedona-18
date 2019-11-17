@@ -1,7 +1,7 @@
 .leave-feedback {
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
-  color: #000000;
+  color: $main-font-color;
 }
 
 .leave-feedback__title {
@@ -19,5 +19,5 @@
   line-height: 1.71;
   letter-spacing: normal;
   text-align: center;
-  color: #333333;
+  color: $text-font-color;
 }

@@ -1,14 +1,12 @@
 .visited-places {
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
-  color: #000000;
+  color: $main-font-color;
   border: none;
 }
 
 .visited-places__wrapper {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 }
 
 .visited-places__title {

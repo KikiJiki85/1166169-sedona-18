@@ -1,7 +1,7 @@
 .social {
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
-  color: #000000;
+  color: $main-font-color;
 }
 
 .social__title {
@@ -12,12 +12,10 @@
   line-height: 1.24;
   letter-spacing: normal;
   text-align: center;
-  color: #000000;
+  color: $main-font-color;
   display: block;
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }

@@ -1,6 +1,6 @@
 .advantages-list {
-  background-color: #ffffff;
-  font-family: "PTSans", "Arial", sans-serif;
+  background-color: $bg-main-color;
+  font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
   list-style: none;
   padding: 0;
@@ -16,7 +16,7 @@
 
   &--active {
     background-color: #81b3d2;
-    color: #ffffff;
+    color: $second-font-color;
     padding-top: 44px;
     padding-bottom: 0;
   }

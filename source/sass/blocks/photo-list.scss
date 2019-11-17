@@ -1,10 +1,9 @@
 .photo-list {
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  color: $main-font-color;
+
+  @include reset-list;
 }
 
 .photo-list__title,
@@ -20,7 +19,7 @@
 
 .photo-list__caption {
   text-transform: none;
-  color: #333333;
+  color: $text-font-color;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.71;

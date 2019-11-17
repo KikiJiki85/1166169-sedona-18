@@ -1,14 +1,12 @@
 .introduce-yourself {
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
-  color: #000000;
+  color: $main-font-color;
   border: none;
 }
 
 .introduce-yourself__wrapper {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 }
 
 .introduce-yourself__field {
@@ -33,7 +31,7 @@
   line-height: 1.86;
   letter-spacing: normal;
   text-align: left;
-  color: #333333;
+  color: $text-font-color;
 }
 
 .introduce-yourself__input {
@@ -42,8 +40,8 @@
   padding-top: 22px;
   padding-left: 22px;
   padding-bottom: 22px;
-  font-family: "PTSans", "Arial", sans-serif;
-  color: #000000;
+  font-family: $main-font, "Arial", sans-serif;
+  color: $main-font-color;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -53,6 +51,6 @@
   text-align: left;
 
   &::placeholder {
-    color: #000000;
+    color: $main-font-color;
   }
 }
