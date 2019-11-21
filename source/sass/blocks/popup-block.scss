@@ -2,6 +2,7 @@
   background-color: $bg-main-color;
   font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
+
   @include reset-list;
   color: $main-font-color;
 }
