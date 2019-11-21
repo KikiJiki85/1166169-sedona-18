@@ -2,7 +2,9 @@
   font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
   color: $main-font-color;
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   @include reset-list;
 }
 
@@ -25,4 +27,22 @@
   line-height: 1.71;
   letter-spacing: normal;
   text-align: left;
+}
+
+.photo-list__item--first {
+  background-color: rgba(255,200,0,0.2);
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    flex-direction: row;
+  }
+
+  .photo-list__item {
+    width: 320px;
+  }
+
+  .photo-list__item--first {
+    width: 100%;
+  }
 }

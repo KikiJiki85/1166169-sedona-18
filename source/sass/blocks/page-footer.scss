@@ -1,8 +1,41 @@
 .page-footer {
   padding-top: 41px;
   padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
 }
+
+.page-footer__hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: $main-font-color;
+    display: block;
+    text-transform: uppercase;
+  }
 
 .page-footer__copyright {
   padding-top: 51px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 768px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 960px;
+  }
 }

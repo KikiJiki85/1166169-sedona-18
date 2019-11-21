@@ -2,6 +2,12 @@
   font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
   color: $main-font-color;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.photo-video__header {
+  padding: 44px 24px 33px 27px;
 }
 
 .photo-video__title {
@@ -20,4 +26,17 @@
   letter-spacing: normal;
   text-align: center;
   color: $text-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-video {
+    width: 768px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photo-video {
+    width: 960px;
+  }
 }

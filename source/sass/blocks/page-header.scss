@@ -1,4 +1,11 @@
 .page-header {
   background-color: $bg-main-color;
   font-family: $main-font, "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
+.page-header__logo {
+  height: 83px;
+}
+

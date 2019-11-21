@@ -2,13 +2,14 @@
   background-color: $bg-main-color;
   font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
-
   @include reset-list;
   color: $main-font-color;
 }
 
 .popup-block__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-block__item-title {
@@ -25,6 +26,16 @@
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  text-align: left;
   color: $text-font-color;
 }
+
+@media (min-width: $tablet-width) {
+  .popup-block__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .popup-block__item {
+    width: 165px;
+  }
+ }

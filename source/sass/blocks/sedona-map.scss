@@ -1,3 +1,19 @@
 .sedona-map {
   background-color: $bg-main-color;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .sedona-map {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-map {
+    width: 960px;
+  }
 }

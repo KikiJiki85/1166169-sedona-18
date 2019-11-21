@@ -2,10 +2,15 @@
   background-color: $bg-main-color;
   font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
-  padding-top: 43px;
 }
 
 .sedona-advantages__header {
+  padding: 43px 33px 29px 32px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.sedona-advantages__title {
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -15,6 +20,7 @@
   text-align: center;
   color: $main-font-color;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .sedona-advantages__text {
@@ -23,5 +29,20 @@
   text-align: center;
   color: $text-font-color;
   margin: 0;
-  margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-advantages__header {
+    width: 640px;
+  }
+
+  .sedona-advantages__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-advantages__header {
+    width: 960px;
+  }
 }

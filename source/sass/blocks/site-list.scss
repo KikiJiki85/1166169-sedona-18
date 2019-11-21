@@ -1,5 +1,4 @@
 .site-list {
-  background-color: #81b3d2;
   font-family: $main-font, "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -8,10 +7,9 @@
   line-height: 2.22;
   letter-spacing: normal;
   text-align: center;
-  color: $second-font-color;
   text-transform: uppercase;
-
   @include reset-list;
+  background-color: #81b3d2;
 }
 
 .site-list__link {
@@ -21,4 +19,24 @@
   padding-top: 21px;
   padding-bottom: 20px;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.site-list__item--logo {
+  order: 2;
+  background-color: $bg-main-color;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    background-color: $bg-main-color;
+  }
+
+  .site-list__item--logo {
+    order: 0;
+  }
+
+  .site-list__link {
+    color: $main-font-color;
+    box-shadow: none;
+  }
 }
