@@ -1,8 +1,32 @@
 .page-footer {
   padding-top: 41px;
   padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-footer__hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: $main-font-color;
+  display: block;
+  text-transform: uppercase;
 }
 
 .page-footer__copyright {
   padding-top: 51px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

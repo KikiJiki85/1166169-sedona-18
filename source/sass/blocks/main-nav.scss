@@ -1,1 +1,25 @@
 // some text header
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .site-list--logo {
+    order: 0;
+  }
+}
