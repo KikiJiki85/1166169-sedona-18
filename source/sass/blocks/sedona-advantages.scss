@@ -6,8 +6,6 @@
 
 .sedona-advantages__header {
   padding: 43px 33px 29px 32px;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .sedona-advantages__title {
@@ -32,17 +30,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .sedona-advantages__header {
-    width: 640px;
-  }
-
   .sedona-advantages__title {
     margin-bottom: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .sedona-advantages__header {
-    width: 960px;
   }
 }

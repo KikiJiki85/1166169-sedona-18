@@ -4,8 +4,6 @@
   text-transform: uppercase;
   padding-top: 33px;
   padding-bottom: 49px;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .find-hotel__title {
@@ -32,16 +30,4 @@
 
 .find-hotel__link {
   margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .find-hotel {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .find-hotel {
-    width: 960px;
-  }
 }
