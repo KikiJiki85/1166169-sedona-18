@@ -2,11 +2,54 @@
   font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
   color: $main-font-color;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.feedback-form__introduce-yourself,
-.feedback-form__contact-info,
-.feedback-form__visited-places,
-.feedback-form__general-impression {
-  margin-bottom: 50px;
+.feedback-form__star {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: center;
+  }
+
+  .feedback-form__star {
+    display: block;
+  }
+
+  .feedback-form__introduce-yourself {
+    width: 324px;
+  }
+
+  .feedback-form__general-impression {
+    width: 324px;
+    order: -1;
+  }
+
+  .feedback-form__contact-info {
+    width: 100%;
+  }
+
+  .feedback-form__visited-places {
+    width: 100%;
+  }
+
+  .feedback-form__feedback-text {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__introduce-yourself {
+    width: 480px;
+  }
+
+  .feedback-form__general-impression {
+    width: 480px;
+  }
 }

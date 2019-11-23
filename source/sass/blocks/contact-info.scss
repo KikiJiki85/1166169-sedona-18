@@ -7,6 +7,8 @@
 
 .contact-info__wrapper {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-info__title {
@@ -53,5 +55,22 @@
 
   &::placeholder {
     color: $main-font-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact-info__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-info__field {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-info__field {
+    width: 480px;
   }
 }

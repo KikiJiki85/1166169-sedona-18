@@ -4,11 +4,17 @@
   color: $main-font-color;
 }
 
+.leave-feedback__header {
+  padding: 41px 21px 22px 23px;
+}
+
 .leave-feedback__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .leave-feedback__text {
@@ -20,4 +26,5 @@
   letter-spacing: normal;
   text-align: center;
   color: $text-font-color;
+  margin: 0;
 }
