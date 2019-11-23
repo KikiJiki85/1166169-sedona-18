@@ -7,6 +7,8 @@
 
 .visited-places__wrapper {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .visited-places__title {
@@ -33,4 +35,26 @@
 
 .visited-places__field:not(:first-child) {
   margin-top: 63px;
+}
+
+@media (min-width: $tablet-width) {
+  .visited-places__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .visited-places__field:not(:first-child) {
+    margin: 0;
+  }
+
+  .visited-places__field {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visited-places__field {
+    width: 256px;
+  }
 }

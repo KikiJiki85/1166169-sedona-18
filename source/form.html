@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -39,8 +40,11 @@
         <img class="sedona-welcome__inner-text-image" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
       </section>
       <section class="leave-feedback">
-        <h2 class="leave-feedback__title">Оставьте свой отзыв</h2>
-        <p class="leave-feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <header class="leave-feedback__header">
+          <h2 class="leave-feedback__title">Оставьте свой отзыв</h2>
+          <p class="leave-feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+
         <form action="post" action="https://echo.htmlacademy.ru" class="leave-feedback__form feedback-form">
 
           <fieldset class="feedback-form__introduce-yourself introduce-yourself">
@@ -76,7 +80,7 @@
           </fieldset>
 
           <fieldset class="feedback-form__general-impression general-impression">
-            <legend class="general-impression__title">Общее впечатление:</legend>
+            <legend class="general-impression__title"> Ваше общее впечатление:</legend>
             <ul class="general-impression__wrapper">
               <li class="general-impression__field">
                 <input class="general-impression__radio" type="radio" name="impression" id="positive" value="positive" checked>
@@ -121,6 +125,7 @@
           </fieldset>
 
             <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+            <span class="feedback-form__star">* - Обязательные поля</span>
           </ul>
         </form>
       </section>
