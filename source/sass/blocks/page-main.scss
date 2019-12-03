@@ -1,1 +1,10 @@
 // page-main block
+.page-main__sedona-welcome {
+  min-height: 389px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__sedona-welcome {
+    min-height: 518px;
+  }
+}

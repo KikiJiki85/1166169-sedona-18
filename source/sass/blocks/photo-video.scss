@@ -5,7 +5,7 @@
 }
 
 .photo-video__header {
-  padding: 44px 24px 33px 27px;
+  padding: 37px 24px 28px 24px;
 }
 
 .photo-video__title {
@@ -13,6 +13,7 @@
   font-weight: bold;
   line-height: 1.44;
   text-align: center;
+  margin: 0;
 }
 
 .photo-video__text {
@@ -24,4 +25,29 @@
   letter-spacing: normal;
   text-align: center;
   color: $text-font-color;
+  margin-top: 29px;
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-video__title {
+    font-size: 30px;
+  }
+
+  .photo-video__header {
+    padding: 65px 170px 69px 170px;
+  }
+
+  .photo-video__text {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-video__header {
+    padding-top: 102px;
+    padding-left: 386px;
+    padding-right: 386px;
+    padding-bottom: 71px;
+  }
 }
