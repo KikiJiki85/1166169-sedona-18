@@ -7,13 +7,25 @@
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.24;
   letter-spacing: normal;
   // text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 17px 47px 19px 47px;
+  padding: 17px 47px 17px 47px;
   width: 280px;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

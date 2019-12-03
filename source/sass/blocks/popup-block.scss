@@ -4,6 +4,7 @@
   text-transform: uppercase;
 
   @include reset-list;
+  padding: 17px 41px 30px 0;
   color: $main-font-color;
 }
 
@@ -13,11 +14,16 @@
   flex-direction: column;
 }
 
+.popup-block__item {
+  padding-left: 70px;
+}
+
 .popup-block__item-title {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   color: $main-font-color;
+  margin-bottom: 17px;
 }
 
 .popup-block__item-text {
@@ -28,15 +34,93 @@
   line-height: 1.5;
   letter-spacing: normal;
   color: $text-font-color;
+  margin-bottom: 7px;
+}
+
+.popup-block__item--apartment {
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 9px;
+  background-size: 37px 36px;
+}
+
+.popup-block__item--souvenirs {
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 9px;
+  background-size: 37px 36px;
+}
+
+.popup-block__item--food {
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  background-size: 37px 36px;
+}
+
+.popup-block__item-text br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .popup-block {
+    padding: 0;
+  }
+
   .popup-block__list {
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
   }
 
   .popup-block__item {
-    width: 165px;
+    width: 256px;
+    padding-top: 136px;
+    padding-bottom: 54px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .popup-block__item-title {
+    font-size: 21px;
+  }
+
+  .popup-block__item-text {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 19px;
+  }
+
+  .popup-block__item--apartment {
+    order: -1;
+    background-size: 75px 72px;
+    background-position: center 60px;
+  }
+
+  .popup-block__item--souvenirs {
+    order: 1;
+    background-size: 64px 75px;
+    background-position: center 57px;
+  }
+
+  .popup-block__item--food {
+    background-position: center 63px;
+    background-size: 77px 68px;
+  }
+
+  .popup-block__item-text br {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup-block__item {
+    width: 400px;
+    padding-bottom: 75px;
+  }
+
+  .popup-block__item-text {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

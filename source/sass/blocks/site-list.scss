@@ -12,13 +12,14 @@
   @include reset-list;
   background-color: #81b3d2;
 }
+
 .site-list__item {
-  min-height: 55px;
+  min-height: 56px;
 }
 
 .site-list__logo-image {
-position: absolute;
-left: calc(50% - 51px);
+  position: absolute;
+  left: calc(50% - 51px);
 }
 
 .site-list__link {
@@ -26,8 +27,8 @@ left: calc(50% - 51px);
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 
   &:hover:not(.site-list__link--active),
@@ -62,6 +63,8 @@ left: calc(50% - 51px);
     color: $main-font-color;
     box-shadow: none;
     width: 153px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     &:hover:not(.site-list__link--active),
     &:focus {

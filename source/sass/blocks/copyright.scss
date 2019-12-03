@@ -1,6 +1,9 @@
 .copyright {
   font-family: $main-font, "Arial", sans-serif;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright-text {
@@ -11,4 +14,21 @@
   line-height: 1.86;
   letter-spacing: normal;
   text-align: center;
+  padding-right: 12px;
+}
+
+.copyright__link {
+  display: block;
+  width: 28px;
+  height: 35px;
+
+  &:hover,
+  &:focus {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+    fill: #000000;
+  }
 }

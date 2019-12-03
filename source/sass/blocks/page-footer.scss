@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 41px;
+  padding-top: 34px;
   padding-bottom: 35px;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,11 @@
 }
 
 .page-footer__copyright {
-  padding-top: 51px;
+  padding-top: 39px;
+}
+
+.page-footer__social {
+  margin-top: 36px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,5 +32,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .page-footer__social {
+    margin-top: 0;
+  }
+
+  .page-footer__copyright {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    justify-content: space-between;
+    padding-right: 120px;
+    padding-left: 120px;
   }
 }

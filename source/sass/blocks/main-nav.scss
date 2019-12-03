@@ -11,10 +11,10 @@
 
 .main-nav__toggle {
   position: absolute;
-  bottom: 4px;
-  right: 4px;
+  bottom: 0;
+  right: 3px;
   display: block;
-  width: 70px;
+  width: 60px;
   height: 55px;
   background-color: $bg-main-color;
   cursor: pointer;
@@ -28,8 +28,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 4px;
-  right: 4px;
+  top: 0;
+  right: 3px;
   background-color: transparent;
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
