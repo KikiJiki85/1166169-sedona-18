@@ -1,7 +1,53 @@
-// some text header
+.main-nav {
+  position: relative;
+  min-height: 55px;
+  background-color: #81b3d2;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  display: block;
+  width: 60px;
+  height: 55px;
+  background-color: $bg-main-color;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 3px;
+  background-color: transparent;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+
+    &--logo {
+      display: block;
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

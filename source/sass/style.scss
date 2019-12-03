@@ -1,7 +1,9 @@
+@import "normalize.scss";
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -10,16 +12,13 @@
 @import "blocks/advantages-list.scss";
 @import "blocks/popup-block";
 @import "blocks/find-hotel.scss";
-@import "blocks/button.scss";
 @import "blocks/sedona-map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/page-photo.scss";
 @import "blocks/photo-video.scss";
 @import "blocks/photo-list.scss";
 @import "blocks/video-block.scss";
-@import "blocks/page-form.scss";
 @import "blocks/leave-feedback.scss";
 @import "blocks/feedback-form.scss";
 @import "blocks/introduce-yourself.scss";
@@ -27,3 +26,6 @@
 @import "blocks/general-impression.scss";
 @import "blocks/visited-places.scss";
 @import "blocks/feedback-text.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-photo.scss";
+@import "blocks/page-form.scss";

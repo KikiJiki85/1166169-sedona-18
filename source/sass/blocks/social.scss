@@ -6,4 +6,37 @@
 
 .social__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #83b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+    width: 155px;
+  }
 }

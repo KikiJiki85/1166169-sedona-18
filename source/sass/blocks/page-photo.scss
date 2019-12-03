@@ -1,1 +1,17 @@
 // page-photo block
+.page-photo__sedona-welcome {
+  min-height: 158px;
+  background-position: bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .page-photo__sedona-welcome {
+    min-height: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-photo__sedona-welcome {
+    min-height: 301px;
+  }
+}
