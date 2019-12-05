@@ -16,7 +16,7 @@
                 <a href="index.html" class="site-list__link">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="photo.html" class="site-list__link site-list__link--active">Фото и видео</a>
+                <a href="photo.html" class="site-list__link">Фото и видео</a>
               </li>
               <li class="site-list__item site-list__item--logo">
                 <a href="index.html" class="site-list__logo">
@@ -24,7 +24,7 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link">Форма отзыва</a>
+                <a class="site-list__link site-list__link--active">Форма отзыва</a>
               </li>
               <li class="site-list__item">
                 <a href="#" class="site-list__link">HTML Academy</a>
@@ -54,11 +54,11 @@
               <legend class="introduce-yourself__title">Представьтесь:</legend>
               <ul class="introduce-yourself__wrapper">
                 <li class="introduce-yourself__field">
-                  <label class="introduce-yourself__label" for="user-name">Имя<sup>*</sup>:</label>
-                  <input class="introduce-yourself__input" type="text" id="user-name" name="name" placeholder="Петр">
+                  <label class="introduce-yourself__label" for="user-name">Имя*:</label>
+                  <input class="introduce-yourself__input introduce-yourself__input--name" type="text" id="user-name" name="name" placeholder="Петр">
                 </li>
                 <li class="introduce-yourself__field">
-                  <label class="introduce-yourself__label" for="user-surname">Фамилия<sup>*</sup>:</label>
+                  <label class="introduce-yourself__label" for="user-surname">Фамилия*:</label>
                   <input class="introduce-yourself__input" type="text" id="user-surname" name="surname" placeholder="Иванов">
                 </li>
                 <li class="introduce-yourself__field">
@@ -71,13 +71,13 @@
             <fieldset class="feedback-form__contact-info contact-info">
               <legend class="contact-info__title">Контактная информация:</legend>
               <ul class="contact-info__wrapper">
-                <li class="contact-info__field">
-                  <label class="contact-info__label" for="user-phone">Контактный телефон<sup>*</sup>:</label>
-                  <input class="contact-info__input contact-info__input--phone" type="text" id="user-phone" name="phone-number" placeholder="Введите телефон">
+                <li class="contact-info__field contact-info__field--phone">
+                  <label class="contact-info__label" for="user-phone">Контактный телефон*:</label>
+                  <input class="contact-info__input" type="text" id="user-phone" name="phone-number" placeholder="Введите телефон">
                 </li>
-                <li class="contact-info__field">
-                  <label class="contact-info__label" for="user-email">Контактный телефон<sup>*</sup>:</label>
-                  <input class="contact-info__input contact-info__input--email" type="text" id="user-email" name="email" placeholder="Введите e-mail">
+                <li class="contact-info__field contact-info__field--mail">
+                  <label class="contact-info__label" for="user-email">Электронная почта*:</label>
+                  <input class="contact-info__input" type="text" id="user-email" name="email" placeholder="Введите e-mail">
                 </li>
               </ul>
             </fieldset>
@@ -86,15 +86,15 @@
               <legend class="general-impression__title"> Ваше общее впечатление:</legend>
               <ul class="general-impression__wrapper">
                 <li class="general-impression__field">
-                  <input class="general-impression__radio" type="radio" name="impression" id="positive" value="positive" checked>
+                  <input class="general-impression__radio visually-hidden" type="radio" name="impression" id="positive" value="positive" checked>
                   <label class="general-impression__label" for="positive">Скорее положительное</label>
                 </li>
                 <li class="general-impression__field">
-                  <input class="general-impression__radio" type="radio" name="impression" id="negative" value="negative">
+                  <input class="general-impression__radio visually-hidden" type="radio" name="impression" id="negative" value="negative">
                   <label class="general-impression__label" for="negative">Скорее отрицательное</label>
                 </li>
                 <li class="general-impression__field">
-                  <input class="general-impression__input" type="radio" name="impression" id="no-answer" value="no-answer">
+                  <input class="general-impression__radio visually-hidden" type="radio" name="impression" id="no-answer" value="no-answer">
                   <label class="general-impression__label" for="no-answer">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -104,19 +104,19 @@
               <legend class="visited-places__title">Посещенные достопримечательности:</legend>
               <ul class="visited-places__wrapper">
                 <li class="visited-places__field">
-                  <input type="checkbox" class="visited-places__checkbox" name="diablo-bridge" id="diablo-bridge" checked>
+                  <input type="checkbox" class="visited-places__checkbox visually-hidden" name="diablo-bridge" id="diablo-bridge" checked>
                   <label class="visited-places__label" for="diablo-bridge">Мост Дьявола</label>
                 </li>
                 <li class="visited-places__field">
-                  <input type="checkbox" class="visited-places__checkbox" name="mountain-bell" id="mountain-bell" checked>
+                  <input type="checkbox" class="visited-places__checkbox visually-hidden" name="mountain-bell" id="mountain-bell" checked>
                   <label class="visited-places__label" for="mountain-bell">Гора-Колокол</label>
                 </li>
                 <li class="visited-places__field">
-                  <input type="checkbox" class="visited-places__checkbox" name="slide-park" id="slide-park" checked>
+                  <input type="checkbox" class="visited-places__checkbox visually-hidden" name="slide-park" id="slide-park" checked>
                   <label class="visited-places__label" for="slide-park">Слайд-парк</label>
                 </li>
                 <li class="visited-places__field">
-                  <input type="checkbox" class="visited-places__checkbox" name="red-rocks" id="red-rocks">
+                  <input type="checkbox" class="visited-places__checkbox visually-hidden" name="red-rocks" id="red-rocks">
                   <label class="visited-places__label" for="red-rocks">Красные скалы</label>
                 </li>
               </ul>
@@ -124,7 +124,7 @@
 
             <fieldset class="feedback-form__feedback-text feedback-text">
               <label class="feedback-text__label" for="user-text">Опишите свои эмоции:</label>
-              <textarea name="text" id="user-text" class="feedback-text__textarea" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea name="text" id="user-text" class="feedback-text__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
               <button class="feedback-form__button button" type="submit">Отправить отзыв</button>

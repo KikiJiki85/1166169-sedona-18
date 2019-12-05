@@ -3,6 +3,21 @@
   text-transform: uppercase;
   color: $main-font-color;
   border: none;
+  position: relative;
+  margin: 0;
+  padding-bottom: 14px;
+  padding-right: 11px;
+  padding-left: 11px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+  }
 }
 
 .general-impression__wrapper {
@@ -17,7 +32,8 @@
   line-height: 1.44;
   letter-spacing: normal;
   text-align: center;
-  margin-bottom: 47px;
+  padding-bottom: 18px;
+  padding-top: 20px;
 }
 
 .general-impression__label {
@@ -29,8 +45,61 @@
   letter-spacing: normal;
   text-align: left;
   text-transform: none;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: -78px;
+    width: 55px;
+    height: 55px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
 }
 
-.general-impression__field:not(:first-child) {
-  margin-top: 52px;
+// Доступность радио кнопок
+.general-impression__radio:focus + .general-impression__label {
+  outline: 5px auto #e5e5e5;
+}
+
+.general-impression__radio:checked + .general-impression__label::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -61px;
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.general-impression__radio:checked + .general-impression__label:active::after {
+  opacity: 0.3;
+}
+
+.general-impression__field {
+  padding-left: 87px;
+  padding-top: 15px;
+  padding-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .general-impression__title {
+    font-size: 21px;
+  }
+
+  .general-impression {
+    padding: 0;
+  }
 }
