@@ -5,7 +5,7 @@
 }
 
 .leave-feedback__header {
-  padding: 41px 21px 22px 23px;
+  padding: 37px 21px 19px 23px;
 }
 
 .leave-feedback__title {
@@ -14,7 +14,7 @@
   line-height: 1.44;
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 .leave-feedback__text {
@@ -27,4 +27,21 @@
   text-align: center;
   color: $text-font-color;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .leave-feedback__title {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .leave-feedback__header {
+    padding: 65px 165px 40px 165px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .leave-feedback__header {
+    padding: 102px 380px 25px 380px;
+  }
 }

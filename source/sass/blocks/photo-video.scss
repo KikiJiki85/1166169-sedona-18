@@ -29,6 +29,10 @@
   margin-bottom: 0;
 }
 
+.photo-video__video-block {
+  margin-bottom: 41px;
+}
+
 @media (min-width: $tablet-width) {
   .photo-video__title {
     font-size: 30px;
@@ -49,5 +53,9 @@
     padding-left: 386px;
     padding-right: 386px;
     padding-bottom: 71px;
+  }
+
+  .photo-video__video-block {
+    margin-bottom: 86px;
   }
 }
