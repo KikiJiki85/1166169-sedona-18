@@ -117,18 +117,88 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact-info {
+    padding: 0;
+
+    &::before {
+      width: 125px;
+      height: 1px;
+      top: 60px;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      top: 60px;
+      right: 0;
+    }
+  }
   .contact-info__wrapper {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
+  .contact-info__title {
+    font-size: 21px;
+    padding-top: 46px;
+    padding-bottom: 22px;
+  }
+
   .contact-info__field {
-    width: 324px;
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contact-info {
+    &::before {
+      top: 58px;
+      width: 280px;
+    }
+
+    &::after {
+      top: 58px;
+      width: 280px;
+    }
+  }
+
+  .contact-info__label {
+    padding: 0;
+    margin: 0;
+    margin-right: 16px;
+  }
+
+  .contact-info__label--phone {
+    display: none;
+  }
+
+  .contact-info__wrapper {
+    flex-direction: row;
+  }
+
+  .contact-info__title {
+    padding-top: 44px;
+    padding-bottom: 72px;
+  }
+
   .contact-info__field {
-    width: 480px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+
+    &--phone::after {
+      top: 0;
+    }
+
+    &--mail::after {
+      top: 0;
+    }
+  }
+  .contact-info__input {
+    width: 294px;
   }
 }

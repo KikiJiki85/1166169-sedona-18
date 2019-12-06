@@ -96,9 +96,50 @@
 @media (min-width: $tablet-width) {
   .introduce-yourself__title {
     font-size: 21px;
+    padding-top: 33px;
+    padding-bottom: 54px;
+    text-align: left;
+  }
+
+  .introduce-yourself__input {
+    width: 180px;
+  }
+
+  .introduce-yourself__input--name {
+    width: 216px;
+  }
+
+  .introduce-yourself__label {
+    padding-right: 0;
   }
 
   .introduce-yourself {
     padding: 0;
+    padding-left: 59px;
+
+    &::before {
+      width: 1px;
+      height: 292px;
+      top: 40px;
+      left: -1px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce-yourself {
+    padding-left: 81px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .introduce-yourself__input {
+    width: 312px;
+  }
+
+  .introduce-yourself__input--name {
+    width: 350px;
   }
 }

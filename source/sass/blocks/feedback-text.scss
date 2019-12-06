@@ -69,3 +69,40 @@
     outline: solid 4px #e5e5e5;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .feedback-text {
+    padding: 0;
+
+    &::before {
+      width: 125px;
+      height: 1px;
+      top: 66px;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      top: 66px;
+      right: 0;
+    }
+  }
+
+  .feedback-text__label {
+    font-size: 21px;
+    margin-top: 52px;
+    margin-bottom: 55px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-text__label {
+    margin-bottom: 54px;
+    margin-top: 50px;
+  }
+}

@@ -39,3 +39,9 @@
     padding: 65px 165px 40px 165px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .leave-feedback__header {
+    padding: 102px 380px 25px 380px;
+  }
+}

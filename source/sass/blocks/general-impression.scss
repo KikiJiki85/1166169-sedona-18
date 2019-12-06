@@ -97,9 +97,40 @@
 @media (min-width: $tablet-width) {
   .general-impression__title {
     font-size: 21px;
+    text-align: left;
+    padding-top: 33px;
+    padding-bottom: 57px;
   }
 
   .general-impression {
     padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .general-impression__field {
+    padding-bottom: 38px;
+    padding-left: 75px;
+  }
+
+  .general-impression__label::before {
+    left: -75px;
+  }
+
+  .general-impression__radio:checked + .general-impression__label::after  {
+    left: -57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .general-impression__title {
+    text-align: center;
+    padding-right: 48px;
+  }
+
+  .general-impression__field {
+    padding-left: 80px;
   }
 }
