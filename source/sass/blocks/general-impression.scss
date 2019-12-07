@@ -3,11 +3,15 @@
   text-transform: uppercase;
   color: $main-font-color;
   border: none;
-  position: relative;
   margin: 0;
   padding-bottom: 14px;
   padding-right: 11px;
   padding-left: 11px;
+}
+
+.general-impression__wrapper {
+  @include reset-list;
+  position: relative;
 
   &::before {
     position: absolute;
@@ -15,13 +19,9 @@
     width: 320px;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
-    top: 0;
-    left: 0;
+    top: -68px;
+    left: -11px;
   }
-}
-
-.general-impression__wrapper {
-  @include reset-list;
 }
 
 .general-impression__title {
@@ -104,7 +104,9 @@
 
   .general-impression {
     padding: 0;
+  }
 
+  .general-impression__wrapper {
     &::before {
       display: none;
     }

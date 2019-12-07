@@ -104,4 +104,16 @@
     margin-bottom: 54px;
     margin-top: 50px;
   }
+
+  .feedback-text {
+    &::before {
+      width: 280px;
+      top: 64px;
+    }
+
+    &::after {
+      width: 280px;
+      top: 64px;
+    }
+  }
 }
