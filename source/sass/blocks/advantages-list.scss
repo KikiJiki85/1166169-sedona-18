@@ -95,7 +95,13 @@
 
 .advantages-list__image-block {
   background-color: $bg-main-color;
+  line-height: 0.15;
+  width: 320px;
   height: 260px;
+}
+
+.advantages-list__image {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -142,10 +148,6 @@
     margin-bottom: 6px;
   }
 
-  .advantages-list__image-block {
-    height: 256px;
-  }
-
   .advantages-list__item--inactive {
     padding-top: 45px;
     padding-left: 42px;
@@ -156,6 +158,11 @@
     &:not(:last-child)::after {
       display: none;
     }
+  }
+
+  .advantages-list__image-block {
+    width: 512px;
+    height: 256px;
   }
 }
 
@@ -177,5 +184,10 @@
 
   .advantages-list__text br:first-of-type {
     display: none;
+  }
+
+  .advantages-list__image-block {
+    width: 800px;
+    height: 256px;
   }
 }
