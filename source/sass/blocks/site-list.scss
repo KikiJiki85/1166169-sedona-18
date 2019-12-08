@@ -20,6 +20,8 @@
 .site-list__logo-image {
   position: absolute;
   left: calc(50% - 51px);
+  width: 102px;
+  height: 83px;
 }
 
 .site-list__link {
@@ -98,5 +100,11 @@
 
   .site-list__item--logo {
     width: 244px;
+  }
+
+  .site-list__logo-image {
+    width: 188px;
+    height: 96px;
+    left: calc(50% - 94px);
   }
 }

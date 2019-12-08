@@ -5,10 +5,14 @@
   border: none;
   margin: 0;
   padding: 0;
-  position: relative;
   padding-bottom: 3px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.introduce-yourself__wrapper {
+  @include reset-list;
+  position: relative;
 
   &::before {
     position: absolute;
@@ -16,13 +20,9 @@
     width: 320px;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
-    top: 0;
-    left: 0;
+    top: -66px;
+    left: -21px;
   }
-}
-
-.introduce-yourself__wrapper {
-  @include reset-list;
 }
 
 .introduce-yourself__field {
@@ -116,12 +116,14 @@
   .introduce-yourself {
     padding: 0;
     padding-left: 59px;
+  }
 
+  .introduce-yourself__wrapper {
     &::before {
       width: 1px;
       height: 292px;
-      top: 40px;
-      left: -1px;
+      top: -77px;
+      left: -60px;
     }
   }
 }
@@ -129,9 +131,11 @@
 @media (min-width: $desktop-width) {
   .introduce-yourself {
     padding-left: 81px;
+  }
 
+  .introduce-yourself__wrapper {
     &::before {
-      left: 0;
+      left: -81px;
     }
   }
 
