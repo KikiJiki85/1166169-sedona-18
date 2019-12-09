@@ -1,8 +1,31 @@
 .sedona-map {
-  background-color: $bg-main-color;
+  background-color: transparent;
   text-align: center;
+  position: relative;
+  min-height: 350px;
 }
 
 .sedona-map__iframe {
-  width: 100%;
+  width: 320px;
+  height: 350px;
+  z-index: 5;
+}
+
+.sedona-map__image {
+  width: 320px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-map__image {
+    width: 100%;
+  }
+
+  .sedona-map__iframe {
+    width: 100%;
+  }
 }
