@@ -24,6 +24,10 @@
   background-position: center;
   cursor: pointer;
 
+  svg {
+    fill: #ffffff;
+  }
+
   &:hover,
   &:focus {
     background-color: #669ec0;
