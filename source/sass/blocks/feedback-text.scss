@@ -68,6 +68,10 @@
     background-color: #ffffff;
     outline: solid 4px #e5e5e5;
   }
+
+  &--invalid {
+    background-color: #f6dada;
+  }
 }
 
 @media (min-width: $tablet-width) {
