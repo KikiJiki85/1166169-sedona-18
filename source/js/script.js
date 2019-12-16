@@ -1,34 +1,34 @@
 // Открытие и закрытие меню
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--closed")) {
+    navMain.classList.remove("main-nav--closed");
+    navMain.classList.add("main-nav--opened");
   } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
+    navMain.classList.add("main-nav--closed");
+    navMain.classList.remove("main-nav--opened");
   }
 });
 
 // Модальные окна
 
-var formWriteUs = document.querySelector('.feedback-form');
-var userName = formWriteUs.querySelector('#user-name');
-var userSurname = formWriteUs.querySelector('#user-surname');
-var userPatronymic = formWriteUs.querySelector('#user-patronymic');
-var userPhone = formWriteUs.querySelector('#user-phone');
-var userEmail = formWriteUs.querySelector('#user-email');
-var userText = formWriteUs.querySelector('#user-text');
+var formWriteUs = document.querySelector(".feedback-form");
+var userName = formWriteUs.querySelector("#user-name");
+var userSurname = formWriteUs.querySelector("#user-surname");
+var userPatronymic = formWriteUs.querySelector("#user-patronymic");
+var userPhone = formWriteUs.querySelector("#user-phone");
+var userEmail = formWriteUs.querySelector("#user-email");
+var userText = formWriteUs.querySelector("#user-text");
 
-var rightSumbitLink = formWriteUs.querySelector('.feedback-form__button-submit');
-var modalRightWindow = formWriteUs.querySelector('.feedback-form__modal-right');
-var modalWrongWindow = formWriteUs.querySelector('.feedback-form__modal-wrong');
-var closeRightWindow = modalRightWindow.querySelector('.feedback-form__modal-button');
-var closeWrongWindow = modalWrongWindow.querySelector('.feedback-form__modal-button');
+var rightSumbitLink = formWriteUs.querySelector(".feedback-form__button-submit");
+var modalRightWindow = formWriteUs.querySelector(".feedback-form__modal-right");
+var modalWrongWindow = formWriteUs.querySelector(".feedback-form__modal-wrong");
+var closeRightWindow = modalRightWindow.querySelector(".feedback-form__modal-button");
+var closeWrongWindow = modalWrongWindow.querySelector(".feedback-form__modal-button");
 
 formWriteUs.addEventListener("submit", function(evt) {
   if (!userName.value || !userSurname.value || !userPatronymic.value || !userPhone.value || !userEmail.value) {
@@ -63,22 +63,22 @@ formWriteUs.addEventListener("submit", function(evt) {
     } else {
       userText.classList.remove(".feedback-text__textarea--invalid");
     }
-    modalWrongWindow.classList.add('feedback-form__modal-wrong--show');
+    modalWrongWindow.classList.add("feedback-form__modal-wrong--show");
 
   } else {
     evt.preventDefault();
-    modalRightWindow.classList.add('feedback-form__modal-right--show');
+    modalRightWindow.classList.add("feedback-form__modal-right--show");
   }
 });
 
 closeRightWindow.addEventListener("click", function(evt) {
   evt.preventDefault();
-  modalRightWindow.classList.remove('feedback-form__modal-right--show');
+  modalRightWindow.classList.remove("feedback-form__modal-right--show");
 });
 
 closeWrongWindow.addEventListener("click", function(evt) {
   evt.preventDefault();
-  modalWrongWindow.classList.remove('feedback-form__modal-wrong--show');
+  modalWrongWindow.classList.remove("feedback-form__modal-wrong--show");
 });
 
 //  Нажатие клавиши ESC при открытом модальном окне
