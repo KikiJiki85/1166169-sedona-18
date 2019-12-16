@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="container">
       <div class="wrapper">
         <header class="page-header">
@@ -139,13 +142,13 @@
                     <div class="video-block__range-toggle" aria-label="Управление временем видео"></div>
                   </div>
                   <button type="button" class="video-block__button-replay">
-                    <svg width="16" height="20"><use xlink:href="img/sprite.svg#icon-replay"></svg>
+                    <svg width="16" height="20"><use xlink:href="#icon-replay"></use></svg>
                   </button>
                   <button type="button" class="video-block__button-subs">
-                    <svg width="32" height="20"><use xlink:href="img/sprite.svg#icon-subs"></svg>
+                    <svg width="32" height="20"><use xlink:href="#icon-subs"></use></svg>
                   </button>
                   <button type="button" class="video-block__button-fullscreen">
-                    <svg width="20" height="20"><use xlink:href="img/sprite.svg#icon-fullscreen"></svg>
+                    <svg width="20" height="20"><use xlink:href="#icon-fullscreen"></use></svg>
                   </button>
                 </div>
               </div>
@@ -160,19 +163,19 @@
                 <li class="social__item">
                   <a href="#" class="social__link social__link--twitter" aria-label="Поиск гостиниц в Седоне Твиттер">
                     <span class="visually-hidden">Мы в twitter</span>
-                    <svg width="18" height="14"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                    <svg width="18" height="14"><use xlink:href="#icon-twitter"></use></svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--facebook" aria-label="Поиск гостиниц в Седоне Фэйсбук">
                     <span class="visually-hidden">Мы в facebook</span>
-                    <svg width="9" height="18"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                    <svg width="9" height="18"><use xlink:href="#icon-facebook"></use></svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--youtube" aria-label="Поиск гостиниц в Седоне Ютуб">
                     <span class="visually-hidden">Мы в youtube</span>
-                    <svg width="20" height="14"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+                    <svg width="20" height="14"><use xlink:href="#icon-youtube"></use></svg>
                   </a>
                 </li>
               </ul>
@@ -180,7 +183,7 @@
             <div class="page-footer__copyright copyright">
               <span class="copyright-text">Разработано</span>
               <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Разработчик сайта - Html Academy">
-              <svg width="27" height="34"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
+              <svg width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
               </a>
             </div>
           </footer>
