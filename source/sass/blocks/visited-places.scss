@@ -102,7 +102,7 @@
   .visited-places__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-left: 95px;
     padding-right: 95px;
 
@@ -142,16 +142,25 @@
     box-sizing: border-box;
     padding-top: 32px;
     padding-bottom: 31px;
+
+    &:nth-child(even) {
+      margin-left: auto; // Для IE 11
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .visited-places__field {
     width: 202px;
+
+    &:nth-child(even) {
+      margin-left: 0;
+    }
   }
 
   .visited-places__wrapper {
     padding: 0;
+    justify-content: space-between;
 
     &::before {
       width: 280px;

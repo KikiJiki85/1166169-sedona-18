@@ -108,7 +108,7 @@
   .photo-list__item {
     width: 50%;
     padding: 0;
-    line-height: 0.15;
+    line-height: 1;
 
     &:first-child {
       width: 100%;
@@ -125,7 +125,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px 17px 21px;
+    padding: 17px 20px 16px 21px;
+    min-height: 80px;
+    box-sizing: border-box;
+    position: relative;
   }
 
   .photo-list__image {
@@ -134,7 +137,7 @@
   }
 
   .photo-list__item:first-child .photo-list__image {
-    height: 400px; // временно
+    height: 400px;
     width: 100%;
   }
 
@@ -163,7 +166,7 @@
 
   .photo-list__caption-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
-    margin-top: -80px;
+    margin-top: -83px;
     color: #ffffff;
   }
 

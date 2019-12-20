@@ -95,7 +95,6 @@
 
 .advantages-list__image-block {
   background-color: $bg-main-color;
-  line-height: 0.15;
   width: 320px;
   height: 260px;
 }
@@ -113,8 +112,13 @@
 
   .advantages-list__header {
     width: 256px;
-    padding: 46px 47px 44px 47px;
+    padding: 46px 45px 44px 45px;
     box-sizing: border-box;
+    min-height: 256px;
+  }
+
+  .advantages-list__image {
+    height: 256px;
   }
 
   .advantages-list__wrapper {
