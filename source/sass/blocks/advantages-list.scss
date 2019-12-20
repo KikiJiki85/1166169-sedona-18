@@ -12,6 +12,7 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .advantages-list__item {
@@ -34,6 +35,7 @@
 .advantages-list__item--inactive {
   padding: 26px 35px 29px 35px;
   position: relative;
+  box-sizing: border-box;
 
   &:not(:last-child)::after {
     content: "";
