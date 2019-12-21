@@ -120,12 +120,16 @@
     }
   }
 
+  .photo-list__item-link {
+    line-height: 0;
+  }
+
   .photo-list__caption-wrapper {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17px 20px 16px 21px;
+    padding: 16px 20px 16px 21px;
     min-height: 80px;
     box-sizing: border-box;
     position: relative;
@@ -143,6 +147,7 @@
 
   .photo-list__item:nth-child(n+3):nth-child(odd) .photo-list__caption-wrapper {
     background-color: #e5e5e5;
+    padding-right: 35px;
   }
 
   .photo-list__item:not(:first-child) .photo-list__caption-wrapper {

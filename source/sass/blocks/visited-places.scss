@@ -153,14 +153,22 @@
   .visited-places__field {
     width: 202px;
 
-    &:nth-child(even) {
+    &:not(:first-child) {
+      margin-left: 57px;
+    }
+
+    &:nth-child(4n) {
+      margin-left: 36px;
+    }
+
+    &:nth-child(4n+1) {
       margin-left: 0;
     }
   }
 
   .visited-places__wrapper {
     padding: 0;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &::before {
       width: 280px;
