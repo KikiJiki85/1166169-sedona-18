@@ -5,9 +5,57 @@
 }
 
 .main-nav__list {
+  font-family: $main-font, "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.22;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include reset-list;
+  background-color: #81b3d2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.main-nav__list-item {
+  min-height: 56px;
+
+  &--logo {
+    order: 2;
+    background-color: $bg-main-color;
+  }
+}
+
+.main-nav__logo-image {
+  position: absolute;
+  left: calc(50% - 51px);
+  width: 102px;
+  height: 83px;
+}
+
+.main-nav__list-link {
+  color: $second-font-color;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+
+  &:hover:not(.main-nav__list-link--active),
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active:not(.main-nav__list-link--active) {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main-nav__toggle {
@@ -38,7 +86,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .main-nav__list-item {
     display: none;
 
     &--logo {
@@ -58,11 +106,66 @@
   }
 
   .main-nav__list {
+    background-color: $bg-main-color;
+    font-size: 14px;
+    line-height: 1.86;
     justify-content: space-between;
     flex-direction: row;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__list-item--logo {
+    width: 156px;
+    order: 0;
+  }
+
+  .main-nav__list-link {
+    color: $main-font-color;
+    box-shadow: none;
+    width: 153px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:hover:not(.main-nav__list-link--active),
+    &:focus {
+      background-color: #ffffff;
+      color: #81b3d2;
+    }
+
+    &:active:not(.main-nav__list-link--active) {
+      background-color: #ffffff;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .main-nav__list-link--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-item--logo {
+    width: 244px;
+  }
+
+  .main-nav__logo-image {
+    width: 188px;
+    height: 96px;
+    left: calc(50% - 94px);
+  }
+
+  .main-nav__list-link {
+    width: 239px;
   }
 }
